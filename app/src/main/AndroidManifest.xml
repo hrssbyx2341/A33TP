@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.x6.a33tp"
+    android:sharedUserId="android.uid.system">
+    <!--申请系统权限-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name = "android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Y7orY8orY10Activity"/>
+        <activity android:name=".Activity.FunctionActivity.AudioActivity"/>
+        <activity android:name=".Activity.FunctionActivity.RecoderActivity"/>
+        <activity android:name=".Activity.FunctionActivity.TFCardActivity" />
+        <activity android:name=".Activity.FunctionActivity.USBActivity" />
+        <activity android:name=".Activity.FunctionActivity.ETHActivity"/>
+        <activity android:name=".Activity.FunctionActivity.WifiActivity"/>
+        <activity android:name=".Activity.FunctionActivity.MobileNetActivity"/>
+        <activity android:name=".Activity.FunctionActivity.ScreenActivity"/>
+        <activity android:name=".Activity.FunctionActivity.ScreenTotalActivity"/>
+        <activity android:name=".Activity.FunctionActivity.UartActivity"/>
+        <activity android:name=".Activity.FunctionActivity.SerialAlloc"/>
+        <activity android:name=".Activity.FunctionActivity.SerialActivity.K7K10232Serial"/>
+        <activity android:name=".Activity.FunctionActivity.SerialActivity.K7K10485Serial"/>
+        <activity android:name=".Activity.FunctionActivity.SerialActivity.Y5Serial"/>
+        <activity android:name=".Activity.FunctionActivity.SerialActivity.Y7Y8Y10Serial"/>
+        <activity android:name=".Activity.FunctionActivity.BlueToothActivity"/>
+        <activity android:name=".Activity.FunctionActivity.GPIOActivity"/>
+        <activity android:name=".Activity.FunctionActivity.RTCActivity"/>
+        <activity android:name=".Activity.FunctionActivity.SerialActivity.Serial485Test"/>
+        <!--<activity android:name=".Activity.TestAcitivity"/>-->
+        <activity android:name=".Activity.EndActivity"/>
+    </application>
+
+
+</manifest>

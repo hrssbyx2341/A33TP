@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/wifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="3"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:text="WIFI测试是否通过"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/wifiyes"
+            android:layout_weight="5.3"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是" />
+        <Button
+            android:id="@+id/wifino"
+            android:layout_weight="5.3"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="否" />
+        <Button
+            android:id="@+id/withoutWifi"
+            android:textSize="@dimen/audioTextSize"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不支持wifi"/>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/wifi"
+        android:id="@+id/dispWifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/displayEthTextSize"
+        android:textColor="#000000"/>
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="进行下一项测试"
+        android:textSize="@dimen/ClickBoxTextSize"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

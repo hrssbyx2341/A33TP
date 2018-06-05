@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/titleEth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/displayTextSize"
+        android:text="GPIO 测试"/>
+    <TextView
+        android:layout_below="@id/titleEth"
+        android:id="@+id/dispEth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/displayEthTextSize"
+        android:textColor="#000000"/>
+    <Button
+        android:layout_below="@+id/dispEth"
+        android:id="@+id/reEth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重新测试"
+        android:textSize="@dimen/audioTextSize"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="进行下一项测试"
+        android:textSize="@dimen/ClickBoxTextSize"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

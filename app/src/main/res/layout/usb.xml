@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/reco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="2"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:text="USB测试是否通过"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/usbyes"
+            android:layout_weight="6"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是" />
+        <Button
+            android:id="@+id/usbno"
+            android:layout_weight="6"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="否" />
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/reco"
+        android:id="@+id/reUsb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重新测试"
+        android:textSize="@dimen/audioTextSize"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_below="@id/reUsb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/explainTextSize"
+        android:textStyle="bold"
+        android:text="请用一个USB设备（类似U盘,鼠标等）依次测试每一个USB口，如果都没有问题请点选是，否则点选否"/>
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="进行下一项测试"
+        android:textSize="@dimen/ClickBoxTextSize"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

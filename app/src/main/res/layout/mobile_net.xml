@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/mobileNet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="3"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:text="4G测试是否通过"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/mobuleNetyes"
+            android:layout_weight="5.3"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是" />
+        <Button
+            android:id="@+id/mobuleNetno"
+            android:layout_weight="5.3"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="否" />
+        <Button
+            android:id="@+id/withoutMobileNet"
+            android:textSize="@dimen/audioTextSize"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="不支持4G"/>
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/mobileNet"
+        android:id="@+id/titleMobileNet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/displayEthTextSize"
+        android:text="4G网络测试，请等待下方出现4G网络，已连接则4G正常，长时间未连接请按照以下检查设备：\n  1、是否有4G模块\n  2、是否插了SIM卡\n  3、SIM卡是否欠费\n  4、4G模块是否插上天线，或者天线是否松动\n 如果以上都没有问题而长时间没有4G网络，则4G测试不通过"/>
+    <TextView
+        android:layout_below="@id/titleMobileNet"
+        android:id="@+id/dispMobileNet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/displayEthTextSize"
+        android:textColor="#000000" />
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="进行下一项测试"
+        android:textSize="@dimen/ClickBoxTextSize"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

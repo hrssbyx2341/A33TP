@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/reco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/serial0"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/serial0_1"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/serial1"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/serial1_1"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/serial2"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/serial2_1"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/serial3"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/serial3_1"
+                android:textSize="@dimen/serialTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/reco"
+        android:id="@+id/serial3_test"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/serial3_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="串口3 232不通过"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/serial3_unpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="串口3 485不通过"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/serial3_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不点按键默认串口3 232 485 都通过"
+        />
+
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="进行下一项测试"
+        android:textSize="@dimen/ClickBoxTextSize"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

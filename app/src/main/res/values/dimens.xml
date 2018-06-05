@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ClickBoxTextSize">30dp</dimen>
+    <dimen name="ClickBoxPadding">3dp</dimen>
+    <dimen name="audioTextSize">50dp</dimen>
+    <dimen name="recoderTextSize">50dp</dimen>
+    <dimen name="displayTextSize">50dp</dimen>
+    <dimen name="explainTextSize">30dp</dimen>
+    <dimen name="startTextSize">50dp</dimen>
+    <dimen name="displayEthTextSize">25dp</dimen>
+    <dimen name="touchDateSize">30dp</dimen>
+    <dimen name="serialTextSize">20dp</dimen>
+    <dimen name="ButtonTextSize">50dp</dimen>
+    <dimen name="resultTextSize">25dp</dimen>
+</resources>

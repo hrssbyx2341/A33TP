@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/tfCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="2"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:text="内存卡测试是否通过"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/tfyes"
+            android:layout_weight="6"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是" />
+        <Button
+            android:id="@+id/tfno"
+            android:layout_weight="6"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="否" />
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/tfCard"
+        android:id="@+id/reTf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重新测试"
+        android:textSize="@dimen/audioTextSize"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_below="@id/reTf"
+        android:id="@+id/tfExplain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/explainTextSize"
+        android:text="     内存卡测试需要您插上内存卡，下方文字会检测内存卡是否存在，如果能够检测到内存卡的存在则内存卡可以正常使用。\n
+        如果检测不到内存卡的存在，请确保是否插上了可用的内存卡。确认插上可用内存卡还是无法检测到内存卡则内存卡无法正常使用。"/>
+    <TextView
+        android:layout_below="@+id/tfExplain"
+        android:id="@+id/tfDisplay"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/displayTextSize"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="当前没有检测到内存卡"/>
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="进行下一项测试"
+        android:textSize="@dimen/ClickBoxTextSize"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

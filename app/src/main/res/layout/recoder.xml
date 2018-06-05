@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/reco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="2"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:text="录音测试是否通过"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/recoyes"
+            android:layout_weight="6"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="是" />
+        <Button
+            android:id="@+id/recono"
+            android:layout_weight="6"
+            android:textSize="@dimen/audioTextSize"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="否" />
+    </LinearLayout>
+    <Button
+        android:layout_below="@+id/reco"
+        android:id="@+id/reReco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重新测试"
+        android:textSize="@dimen/audioTextSize"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="进行下一项测试"
+        android:textSize="@dimen/ClickBoxTextSize"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
